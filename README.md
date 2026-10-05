@@ -14,6 +14,7 @@ Only `tmdb_5000_movies.csv` is used (4803 movies). `title` is the item identifie
 - `app.py` - Streamlit app
 - `requirements.txt`
 - `tmdb_5000_movies.csv` - dataset
+- `screenshots/` - screenshots of the deployed app
 
 ## Steps
 
@@ -43,4 +44,18 @@ Deployed on Render as a web service connected to this GitHub repo.
 
 One change from the notebook: the app does not store the full similarity matrix. It computes the similarity of only the selected movie against the others when the button is clicked. The output is the same but it needs much less memory, which matters on the free instance (512 MB).
 
-Live app: (link will be added after deployment)
+Live app: https://movie-recommender-13yw.onrender.com
+
+(It is on the free plan so it sleeps when not used. The first load can take around a minute.)
+
+GitHub repo: https://github.com/ThreeNethra/movie-recommender
+
+## Screenshots
+
+Deployed app:
+
+![deployed app](screenshots/deployed_app.png)
+
+Render deploy:
+
+![render deploy](screenshots/render_deploy.png)
